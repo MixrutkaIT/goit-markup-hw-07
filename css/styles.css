@@ -1106,7 +1106,7 @@ button {
 /*Mobile styles*/
 @media only screen and (max-width: 767px) {
    .footer-subscribe-input {
-    width: 398px;
+    width: 100%;
   }
 }
 /*Tablet styles*/
