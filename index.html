@@ -29,14 +29,22 @@
           <a class="header-logo logo link" href="./index.html"
             >Web<span class="header-logo-color">Studio</span></a
           >
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg class="menu-toggle-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
           <ul class="header-nav-list list">
             <li class="header-nav-item">
               <a class="header-nav-link current link" href="./index.html">Studio</a>
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+                >Portfolio</a>
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link link" href="">Contacts</a>
@@ -46,12 +54,12 @@
         <address class="add">
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-contact link" href="mailto:info@devstudio.com"
+              <a class="header-contact email link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-item">
-              <a class="header-contact link" href="tel:+110001111111"
+              <a class="header-contact tel link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -67,6 +75,7 @@
           <button class="hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
+       
       <!--Strenghts section-->
       <section class="strenghts section">
         <div class="container strenghts-section">
@@ -131,25 +140,34 @@
             <li class="whatarewedoing-item">
               <img
                 class="whatarewedoing-img"
+                srcset="./images/what-we-are-doing/img-01-@1x.jpg 360w, ./images/what-we-are-doing/img-01-@2x.jpg 720w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 360px, (min-width: 428px) 360px, 100vw"
                 src="./images/what-we-are-doing/img-01.jpg"
                 alt="statistics on the monitor"
                 width="360"
+                loading="lazy"
               />
             </li>
             <li class="whatarewedoing-item">
               <img
                 class="whatarewedoing-img"
+                srcset="./images/what-we-are-doing/img-02-@1x.jpg 360w, ./images/what-we-are-doing/img-02-@2x.jpg 720w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 360px, (min-width: 428px) 360px, 100vw"
                 src="./images/what-we-are-doing/img-02.jpg"
                 alt="chat in the phone app"
                 width="360"
+                loading="lazy"
               />
             </li>
             <li class="whatarewedoing-item">
               <img
                 class="whatarewedoing-img"
+                srcset="./images/what-we-are-doing/img-03-@1x.jpg 360w, ./images/what-we-are-doing/img-03-@2x.jpg 720w"
+                sizes="(min-width: 1158px) 360px, (min-width: 768px) 360px, (min-width: 428px) 360px, 100vw"
                 src="./images/what-we-are-doing/img-03.jpg"
                 alt="open application on the phone"
                 width="360"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -163,9 +181,12 @@
             <li class="ourteam-item">
               <img
                 class="ourteam-img"
+                srcset="./images/team/img-01-mob@1x.jpg 264w, ./images/team/img-01-mob@2x.jpg 528w"
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
                 src="./images/team/img-01.jpg"
                 alt="Mark Guerrero"
                 width="264"
+                loading="lazy"
               />
               <div class="team-card">
                 <h3 class="team-title">Mark Guerrero</h3>
@@ -205,9 +226,12 @@
             <li class="ourteam-item">
               <img
                 class="ourteam-img"
+                srcset="./images/team/img-02-mob@1x.jpg 264w, ./images/team/img-02-mob@2x.jpg 528w"
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
                 src="./images/team/img-02.jpg"
                 alt="Tom Ford"
                 width="264"
+                loading="lazy"
               />
               <div class="team-card">
                 <h3 class="team-title">Tom Ford</h3>
@@ -247,9 +271,12 @@
             <li class="ourteam-item">
               <img
                 class="ourteam-img"
+                srcset="./images/team/img-03-mob@1x.jpg 264w, ./images/team/img-03-mob@2x.jpg 528w"
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
                 src="./images/team/img-03.jpg"
                 alt="Camila Garcia"
                 width="264"
+                loading="lazy"
               />
               <div class="team-card">
                 <h3 class="team-title">Camila Garcia</h3>
@@ -289,9 +316,12 @@
             <li class="ourteam-item">
               <img
                 class="ourteam-img"
+                srcset="./images/team/img-04-mob@1x.jpg 264w, ./images/team/img-04-mob@2x.jpg 528w"
+                sizes="(min-width: 1158px) 264px, (min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
                 src="./images/team/img-04.jpg"
                 alt="Daniel Wilson"
                 width="264"
+                loading="lazy"
               />
               <div class="team-card">
                 <h3 class="team-title">Daniel Wilson</h3>
@@ -478,7 +508,7 @@
             <use href="./images/icons.svg#icon-phone-checkbox"></use>
           </svg>
         </div>
-      </div> 
+      </div>
       
      
 
@@ -521,6 +551,73 @@
       </form>
       </div>
     </div>
+    <!--Mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+
+        <svg class="menu-toggle-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a class="menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="menu-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials-list list">
+        <li class="footer-socials-item list">
+          <a class="footer-socials-link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+          <svg class="footer-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+        <li class="footer-socials-item list">
+          <a class="footer-socials-link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter icon">
+          <svg class="footer-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+        <li class="footer-socials-item list">
+          <a class="footer-socials-link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook icon">
+          <svg class="footer-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+        <li class="footer-socials-item list">
+          <a class="footer-socials-link link" href="https://linkedIn.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn icon">
+          <svg class="footer-socials-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>
